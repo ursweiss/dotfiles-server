@@ -1,0 +1,15 @@
+*
+!.gitignore
+!.gitmodules
+!.zshrc
+!.zsh/
+!.zsh/*
+!.zsh/lib/
+!.zsh/lib/*
+!.vimrc
+!.vim/
+!.vim/bundle/
+!.vim/bundle/*
+!.vim/colors/
+!.vim/colors/*
+!README.md
