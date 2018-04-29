@@ -2,8 +2,8 @@
 Relatively lightweight Zsh and Vim configuration i use on servers, without any dependencies.
 
 * Uses some files of oh-my-zsh
-* Custom prompt inspired by Pure Zsh prompt
-* Solarized theme for Vim
+* Custom prompt inspired by [Pure Zsh prompt](https://github.com/sindresorhus/pure)
+* [Solarized theme for Vim](https://github.com/altercation/vim-colors-solarized)
 
 Features:
 * Username and host only displayed if connected to a server by SSH
@@ -12,10 +12,11 @@ Features:
 * Git status on the right side if current directory is within a git repository
 * Staged changes in repository shown in green, unstaged in red
 
+## Screenshot
 ![Example screenshot](https://raw.githubusercontent.com/ursweiss/screenshots/master/dotfiles-server/dotfiles-server-example.png)
 
-## Install the dotfiles on a server
-### Without git installed (Recommended)
+# Install the dotfiles on a server
+## Without git installed (Recommended)
 This is the quick and easy way to install the current dotfiles on the machine.
 I do recommend this option as long you don't want to change the files and push them back to the repository.
 
@@ -26,7 +27,7 @@ cd ~
 curl -L https://api.github.com/repos/ursweiss/dotfiles-server/tarball/master | tar xz --strip=1
 ```
 
-### With git installed
+## With git installed
 If you want to use git to install/update the dotfiles.
 
 If not done already, you should set the name and eMail address git uses first:
