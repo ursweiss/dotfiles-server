@@ -12,8 +12,8 @@ promptinit
 # Look at http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information
 # for mor options
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' unstagedstr ' %F{124}*%F{yellow}'   # display this when there are unstaged changes
-zstyle ':vcs_info:*' stagedstr ' %F{green}*%F{yellow}'   # display this when there are staged changes
+zstyle ':vcs_info:*' unstagedstr '%2{ %F{124}●%F{yellow}%}'   # display this when there are unstaged changes
+zstyle ':vcs_info:*' stagedstr '%2{ %F{green}●%F{yellow}%}'   # display this when there are staged changes
 zstyle ':vcs_info:*' actionformats '%F{yellow}[%s:%a|%b%c%u]%f'
 zstyle ':vcs_info:*' formats '%F{yellow}[%s:%b%c%u]%f'
 
