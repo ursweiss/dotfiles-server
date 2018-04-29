@@ -25,6 +25,7 @@ Copy & paste these lines to you terminal:
 ### Warning: This overwrites all the files within the home directory with the ones in the repository without any further warning!
 cd ~
 curl -L https://api.github.com/repos/ursweiss/dotfiles-server/tarball/master | tar xz --strip=1
+rm README.md
 ```
 
 ## With git installed
