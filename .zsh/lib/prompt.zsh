@@ -53,4 +53,14 @@ PROMPT+='%(?.%F{green}.%F{red})${PROMPT_SYMBOL:-❱}%f '
 
 
 ### Right prompt (VCS)
-RPROMPT='${vcs_info_msg_0_}'
+function check_git_hide_status() {
+    if [[ "$(command git config --get zsh-git.hide-status 2>/dev/null)" != "1" ]];then
+        RPROMPT='${vcs_info_msg_0_}'
+    else
+        RPROMPT='foo'
+    fi
+}
+# Call the function on every directory change to check its git status and config
+chpwd_functions=(${chpwd_functions[@]} "check_git_hide_status")
+# Call it once after login to get the status of the home directory
+check_git_hide_status
