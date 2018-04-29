@@ -57,7 +57,7 @@ function check_git_hide_status() {
     if [[ "$(command git config --get zsh-git.hide-status 2>/dev/null)" != "1" ]];then
         RPROMPT='${vcs_info_msg_0_}'
     else
-        RPROMPT='foo'
+        RPROMPT=''
     fi
 }
 # Call the function on every directory change to check its git status and config
