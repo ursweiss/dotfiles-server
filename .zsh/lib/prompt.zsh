@@ -9,8 +9,6 @@ setopt prompt_subst
 autoload -U promptinit
 promptinit
 
-ZLE_RPROMPT_INDENT=0
-
 # Look at http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Version-Control-Information
 # for mor options
 zstyle ':vcs_info:*' check-for-changes true
@@ -49,7 +47,7 @@ fi
 PROMPT+='%F{blue}%~%f '
 
 # The prompt turns red if the previous command wasn't successfull
-PROMPT+='%(?.%F{green}.%F{red})${PROMPT_SYMBOL:-❱}%f '
+PROMPT+='%2{%(?.%F{green}.%F{red})${PROMPT_SYMBOL:-❱}%f %}'
 
 
 ### Right prompt (VCS)
